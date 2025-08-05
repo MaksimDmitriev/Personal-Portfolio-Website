@@ -6,8 +6,63 @@
     <title>Personal Portfolio Website</title>
   </head>
   <body>
-    <h1>Welcome my Personal Portfolio Website</h1>
+    <header>
+      <h1>Semantic HTML Example</h1>
+    </header>
 
+    <nav>
+      <a href="#">Home</a> | <a href="#">Blog</a> |
+      <a href="#">About</a>
+    </nav>
+
+    <main>
+      <article>
+        <header>
+          <h2>Article Title</h2>
+          <time datetime="2025-08-05">August 5, 2025</time>
+        </header>
+
+        <section>
+          <p>
+            This is a paragraph in a section of the article. Here's a
+            <mark>highlighted text</mark> using the
+            <code>&lt;mark&gt;</code> tag.
+          </p>
+        </section>
+
+        <figure>
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="Placeholder Image"
+          />
+          <figcaption>Figure 1: A placeholder image with a caption.</figcaption>
+        </figure>
+
+        <details>
+          <summary>Click to expand more information</summary>
+          <p>
+            This hidden content becomes visible when you click on the summary.
+            Great for FAQs or extra details.
+          </p>
+        </details>
+
+        <footer>
+          <p>Author: John Doe</p>
+        </footer>
+      </article>
+
+      <aside>
+        <h3>Sidebar</h3>
+        <p>
+          This is some related info or advertisements that live outside the main
+          content area.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Semantic Webpage. All rights reserved.</p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

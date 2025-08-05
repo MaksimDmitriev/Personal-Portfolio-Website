@@ -1,10 +1,61 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
   padding: 20px;
   background-color: #f0f0f0;
   color: #333;
 }
 
-h1 {
-  color: #2a7ae2;
+header,
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background: #444;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  padding: 1rem;
+}
+
+article {
+  flex: 3;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+aside {
+  flex: 1;
+  padding: 1rem;
+  background: #efefef;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+mark {
+  background-color: yellow;
+}
+
+details {
+  margin: 1rem 0;
+}
+
+footer {
+  margin-top: 2rem;
 }
