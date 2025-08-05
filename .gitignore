@@ -1,0 +1,35 @@
+# Node.js dependencies
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+/dist/
+/build/
+/out/
+
+# IDE and OS generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Editor specific files
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Sensitive information (e.g., API keys, environment variables)
+.env
+config.js.local
+
