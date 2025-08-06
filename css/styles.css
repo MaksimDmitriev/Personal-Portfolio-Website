@@ -34,3 +34,13 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+@media (min-width: 600px) { /* tablets portrait+ */ }
+
+@media (min-width: 768px) { /* tablets landscape+ */ }
+
+@media (min-width: 1024px) { /* small desktops */ }
+
+@media (min-width: 1280px) { /* large desktops */ }
+
+@media (min-width: 1600px) { /* ultra-wide, optional */ }
