@@ -18,7 +18,7 @@ header p:last-child {
 }
 
 #today-date {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   text-align: start;
 }
 
@@ -33,6 +33,14 @@ nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
+}
+
+main {
+  padding: 1rem;
+}
+
+article {
+  font-size: 1.125rem;
 }
 
 @media (min-width: 600px) { /* tablets portrait+ */ }
