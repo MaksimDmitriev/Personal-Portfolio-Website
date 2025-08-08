@@ -41,16 +41,34 @@ main {
   flex-direction: column;
 }
 
+section#gallery {
+  margin-inline-end: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 article {
   font-size: 1.125rem;
   margin-inline-end: 1rem;
 }
 
-
 /* Tablets (≥ 600px) */
 @media only screen and (min-width: 600px) {
   main {
     flex-direction: row;
+  }
+
+  article#intro {
+    width: 55%;
+  }
+
+  section#gallery {
+    width: 35%;
+  }
+
+  aside {
+    width: 10%;
   }
 }
 
@@ -65,4 +83,3 @@ article {
 /* Large desktops or wide screens (≥ 1280px) */
 @media only screen and (min-width: 1280px) {
 }
-
