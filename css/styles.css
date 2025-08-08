@@ -14,11 +14,18 @@ body {
   grid-template-rows: auto auto 1fr auto;
 }
 
-header {
-  grid-area: header;
+header, nav, main, aside, footer {
+  padding: 1rem;
+}
+
+header, footer {
   background-color: #001f4d;
   color: white;
-  padding: 1rem 1rem 0rem 1rem;
+}
+
+header {
+  grid-area: header;
+  padding-bottom: 0rem;
   text-align: center;
 }
 
@@ -44,12 +51,15 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
 }
+
 main {
   grid-area: main;
 }
+
 aside {
   grid-area: aside;
 }
+
 footer {
   grid-area: footer;
 }
