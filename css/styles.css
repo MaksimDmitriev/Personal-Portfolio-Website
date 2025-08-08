@@ -42,10 +42,24 @@ main {
 }
 
 section#gallery {
-  margin-inline-end: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  margin-inline-end: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-gap: 2px;
+  background-color: #2196F3;
+  padding: 2px;
+}
+
+section#gallery > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: 2 / 2 / span 1 / span 3;
 }
 
 article {
