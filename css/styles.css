@@ -72,38 +72,37 @@ aside.right {
 footer {
   grid-area: footer;
 }
-
-section#gallery {
+#gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 180px; /* base row height */
-  grid-auto-flow: dense; /* back-fill gaps nicely */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 180px; /* base row height for row spans */
+  grid-auto-flow: dense; /* backfill gaps */
   gap: 2px;
-  background: #2196f3;
-  padding: 2px;
+  background-color: #333;
 }
-
-section#gallery > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 4rem;
+#gallery > div {
+  background: #fff;
+  display: grid;
+  place-items: center;
 }
-
-/* span across 2 columns */
-section#gallery > div.wide {
+#gallery > div.wide {
   grid-column: span 2;
 }
-
-/* span down 2 rows */
-section#gallery > div.tall {
+#gallery > div.tall {
+  grid-row: span 2;
+}
+#gallery > div.big {
+  grid-column: span 2;
   grid-row: span 2;
 }
 
-/* span 2x2 cells */
-section#gallery > div.big {
-  grid-column: span 2;
-  grid-row: span 2;
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#gallery > div {
+  overflow: hidden;
 }
 
 article.content {
