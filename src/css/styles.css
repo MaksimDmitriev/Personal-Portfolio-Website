@@ -5,13 +5,8 @@ body {
   background-color: #f0f8ff;
   color: #333;
   display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav    nav    nav"
-    "asideL main   asideR"
-    "footer footer footer";
-  grid-template-columns: 0.75fr 2fr 0.75fr;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template:
+    "header header header" auto "nav    nav    nav" auto "asideL main   asideR" 1fr "footer footer footer" auto / 0.75fr 2fr 0.75fr;
 }
 
 header,
@@ -30,7 +25,7 @@ footer {
 
 header {
   grid-area: header;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -72,6 +67,7 @@ aside.right {
 footer {
   grid-area: footer;
 }
+
 #gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -80,17 +76,21 @@ footer {
   gap: 2px;
   background-color: #333;
 }
+
 #gallery > div {
   background: #fff;
   display: grid;
   place-items: center;
 }
+
 #gallery > div.wide {
   grid-column: span 2;
 }
+
 #gallery > div.tall {
   grid-row: span 2;
 }
+
 #gallery > div.big {
   grid-column: span 2;
   grid-row: span 2;
@@ -101,6 +101,7 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
 #gallery > div {
   overflow: hidden;
 }
@@ -109,7 +110,7 @@ article.content {
   font-size: 1.125rem;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   body {
     grid-template-areas:
       "header"

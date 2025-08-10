@@ -1,0 +1,10 @@
+{
+  "extends": ["web-recommended"],
+  "hints": {
+    "compat-api/css": "error",
+    "compat-api/html": "error",
+    "compat-api/js-api": "error"
+  },
+  "browserslist": true
+}
+
