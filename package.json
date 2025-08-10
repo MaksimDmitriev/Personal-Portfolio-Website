@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:html": "vnu --errors-only --skip-non-html 'src/**/*.html'",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:css:compat": "doiuse --browserslist-config . 'src/**/*.css'",
+    "lint:js": "eslint 'src/**/*.js'",
+    "lint:site": "hint 'src/**/*.html'",
+    "lint:web": "npm run lint:html && npm run lint:css && npm run lint:css:compat && npm run lint:js && npm run lint:site"
   },
   "keywords": [],
   "author": "",
