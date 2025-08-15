@@ -5,8 +5,13 @@ body {
   background-color: #f0f8ff;
   color: #333;
   display: grid;
-  grid-template:
-    "header header header" auto "nav    nav    nav" auto "asideL main   asideR" 1fr "footer footer footer" auto / 0.75fr 2fr 0.75fr;
+  grid-template-areas:
+    "header header header"
+    "nav    nav    nav"
+    "asideL main   asideR"
+    "footer footer footer";
+  grid-template-columns: 0.75fr 2fr 0.75fr;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 header,
