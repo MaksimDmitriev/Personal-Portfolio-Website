@@ -9,6 +9,8 @@
     "lint:css:compat": "doiuse --browserslist-config . $(find src -name '*.css')",
     "lint:js": "eslint 'src/**/*.js'",
     "lint:site": "hint 'src/**/*.html'",
+    "lint:site:url": "hint http://127.0.0.1:5500",
+    "lint:site:summary": "hint --format summary 'src/**/*.html'",
     "coverage": "browserslist --coverage",
     "lint:web": "npm run lint:html && npm run lint:css && npm run lint:css:compat && npm run lint:js && npm run lint:site",
     "format": "prettier --write 'src/**/*.{js,css,html,json}'"
@@ -34,6 +36,7 @@
     "globals": "^16.3.0",
     "hint": "^7.1.13",
     "prettier": "^3.6.2",
+    "puppeteer": "^24.16.2",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
     "vnu-jar": "^24.10.17"
