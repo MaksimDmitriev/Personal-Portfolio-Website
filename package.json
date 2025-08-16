@@ -6,7 +6,7 @@
   "scripts": {
     "lint:html": "vnu --errors-only --skip-non-html 'src/**/*.html'",
     "lint:css": "stylelint 'src/**/*.css'",
-    "lint:css:compat": "doiuse --browserslist-config . 'src/**/*.css'",
+    "lint:css:compat": "doiuse --browserslist-config . $(find src -name '*.css')",
     "lint:js": "eslint 'src/**/*.js'",
     "lint:site": "hint 'src/**/*.html'",
     "coverage": "browserslist --coverage",
