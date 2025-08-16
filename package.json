@@ -10,7 +10,6 @@
     "lint:js": "eslint 'src/**/*.js'",
     "lint:site": "hint 'src/**/*.html'",
     "lint:site:url": "hint http://127.0.0.1:5500",
-    "lint:site:summary": "hint --formatters summary $(find src -name '*.html')",
     "coverage": "browserslist --coverage",
     "lint:web": "npm run lint:html && npm run lint:css && npm run lint:css:compat && npm run lint:js && npm run lint:site",
     "format": "prettier --write 'src/**/*.{js,css,html,json}'"
