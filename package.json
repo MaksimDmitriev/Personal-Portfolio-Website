@@ -1,35 +1,39 @@
 {
-  "name": "personal-portfolio-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint:html": "vnu --errors-only --skip-non-html 'src/**/*.html'",
-    "lint:css": "stylelint 'src/**/*.css'",
-    "lint:css:compat": "doiuse --browserslist-config . 'src/**/*.css'",
-    "lint:js": "eslint 'src/**/*.js'",
-    "lint:site": "hint 'src/**/*.html'",
-    "lint:web": "npm run lint:html && npm run lint:css && npm run lint:css:compat && npm run lint:js && npm run lint:site"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "browserslist": "^4.25.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.28.0",
-    "@babel/eslint-parser": "^7.28.0",
-    "@eslint/js": "^9.33.0",
-    "browserslist-config-baseline": "^0.5.0",
-    "doiuse": "^6.0.5",
-    "eslint": "^9.33.0",
-    "eslint-plugin-compat": "^6.0.2",
-    "globals": "^16.3.0",
-    "hint": "^7.1.13",
-    "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0",
-    "vnu-jar": "^24.10.17"
-  }
+    "name": "personal-portfolio-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint:html": "vnu --errors-only --skip-non-html 'src/**/*.html'",
+        "lint:css": "stylelint 'src/**/*.css'",
+        "lint:css:compat": "doiuse --browserslist-config . 'src/**/*.css'",
+        "lint:js": "eslint 'src/**/*.js'",
+        "lint:site": "hint 'src/**/*.html'",
+        "lint:web": "npm run lint:html && npm run lint:css && npm run lint:css:compat && npm run lint:js && npm run lint:site",
+        "format": "prettier --write 'src/**/*.{js,css,html,json}'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 3 years",
+        "not dead",
+        "> 0.2%"
+    ],
+    "type": "commonjs",
+    "devDependencies": {
+        "@babel/core": "^7.28.0",
+        "@babel/eslint-parser": "^7.28.0",
+        "@eslint/js": "^9.33.0",
+        "browserslist": "^4.25.2",
+        "doiuse": "^6.0.5",
+        "eslint": "^9.33.0",
+        "eslint-plugin-compat": "^6.0.2",
+        "globals": "^16.3.0",
+        "hint": "^7.1.13",
+        "prettier": "^3.6.2",
+        "stylelint": "^16.23.1",
+        "stylelint-config-standard": "^39.0.0",
+        "vnu-jar": "^24.10.17"
+    }
 }
