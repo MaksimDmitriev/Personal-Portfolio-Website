@@ -2,7 +2,6 @@
   "name": "personal-portfolio-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "lint:html": "vnu --errors-only --skip-non-html $(find src -name '*.html')",
     "lint:css": "stylelint 'src/**/*.css'",
@@ -23,7 +22,7 @@
     "> 0.2%",
     "not op_mini all"
   ],
-  "type": "commonjs",
+  "private": true,
   "devDependencies": {
     "@babel/core": "^7.28.0",
     "@babel/eslint-parser": "^7.28.0",

@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2022": true },
+  "parser": "@babel/eslint-parser",
+  "plugins": ["compat"],
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "compat/compat": "error"
+  }
+}
